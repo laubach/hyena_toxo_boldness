@@ -167,13 +167,13 @@
       # load aod packages (used to for Wald test)
        library ('aod')
         
-      # # Check for car and install if not already installed
-      #   if (!'car' %in% installed.packages()[,1]){
-      #     install.packages ('car')
-      #   }
-      # # load car packages (used for type II and type III SS test)
-      #   library ('car')
-      #   #options(contrasts = c('contr.sum', 'contr.poly'))
+      # Check for car and install if not already installed
+        if (!'car' %in% installed.packages()[,1]){
+          install.packages ('car')
+        }
+      # load car packages (used for type II and type III SS test) and vif
+        library ('car')
+        #options(contrasts = c('contr.sum', 'contr.poly'))
      
            
   ### 1.4 Get Version and Session Info
@@ -2482,16 +2482,16 @@
     #               term = factor(term,levels = c('Seronegative (reference)', 
     #                                         'Seropositive')))
     
-    ## l) re-order dataframe according to the factor levels
-      # cub.lion.dist.est <- cub.lion.dist.est[order(cub.lion.dist.est$model, 
-      #                                              cub.lion.dist.est$term),]
-      
-      cub.lion.dist.est$term <- as.character(cub.lion.dist.est$term) 
+    # ## l) re-order dataframe according to the factor levels
+    #   # cub.lion.dist.est <- cub.lion.dist.est[order(cub.lion.dist.est$model, 
+    #   #                                              cub.lion.dist.est$term),]
+    #   
+    #   cub.lion.dist.est$term <- as.character(cub.lion.dist.est$term) 
       
       
     ## m) create a new dataframe of LS means for graphing
-      cub.lion.dist.ls.means <- data.frame(term = c('Seronegative',
-                                                    'Seropositive'),
+      cub.lion.dist.ls.means <- data.frame(term = c('Uninfected',
+                                                    'Infected'),
                                            estimate = c(-79.5903, -42.3454),
                                            #std.error = c(10.9588, 9.3418),
                 # Note forcing dwplot to graph SE by specificy the upper and
@@ -2610,8 +2610,8 @@ distance from lions by T. gondii infection status.',
     #                                   'Adjusted subadult/adult model')))
       
     ## i) create a new dataframe of LS means for graphing
-      sub.adult.lion.dist.ls.means <- data.frame(term = c('Seronegative',
-                                                    'Seropositive'),
+      sub.adult.lion.dist.ls.means <- data.frame(term = c('Uninfected',
+                                                    'Infected'),
                                            estimate = c(-23.7725, -24.0226),
                                            #std.error = c(2.6152, 1.8382),
              # Note forcing dwplot to graph SE by specificy the upper and
