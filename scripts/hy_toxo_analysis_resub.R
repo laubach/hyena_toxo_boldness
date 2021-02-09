@@ -39,13 +39,13 @@
   ### 1.2 Install and load Mara Hyena Project packages 
     ## a) Load the Mara Hyena Project data files from github
       # Check for devtools and install if not already installed
-      if(!'devtools' %in% row.names(installed.packages())){
-        install.packages('devtools')
-      }
-    ## b) Use devtools to install hyeanadata package from the MaraHyenaProject
-      # on github
-      devtools::install_github('MaraHyenaProject/hyenadata',
-                      auth_token = '')
+    #   if(!'devtools' %in% row.names(installed.packages())){
+    #     install.packages('devtools')
+    #   }
+    # ## b) Use devtools to install hyeanadata package from the MaraHyenaProject
+    #   # on github
+    #   devtools::install_github('MaraHyenaProject/hyenadata',
+    #                   auth_token = '')
     # load hyenadata package
       library('hyenadata')
 
@@ -200,9 +200,9 @@
     sessionInfo()
     
     # Developed in:   
-    # R version 4.0.0 (2020-04-24)
+    # R version 4.0.2 (2020-06-22)
     # Platform: x86_64-apple-darwin17.0 (64-bit)
-    # Running under: macOS Mojave 10.14.6
+    # Running under: macOS Catalina 10.15.7
     
     
   ### 1.5 Set working directory 
@@ -2509,6 +2509,8 @@
                                 data = lion_hy_dist_toxo_sub_adult)
                                 # sensitivity
                                 #data = lion_hy_dist_toxo_restrict_sub_adult)
+                                # data = subset(lion_hy_dist_toxo_sub_adult,
+                                #               diagnosis != 'doubtful')) 
       #** NOTE there is a singular fit when including other variables, 
         # results still null, so we report only adjustment for age.cat.lion
         # and food.present
