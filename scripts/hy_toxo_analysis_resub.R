@@ -36,18 +36,14 @@
       options(stringsAsFactors = FALSE)
   
       
-  ### 1.2 Install and load Mara Hyena Project packages 
-    ## a) Load the Mara Hyena Project data files from github
-      # Check for devtools and install if not already installed
-    #   if(!'devtools' %in% row.names(installed.packages())){
-    #     install.packages('devtools')
-    #   }
-    # ## b) Use devtools to install hyeanadata package from the MaraHyenaProject
-    #   # on github
-    #   devtools::install_github('MaraHyenaProject/hyenadata',
-    #                   auth_token = '')
-    # load hyenadata package
+  ### 1.2 Install and load Mara Hyena Project package 
+    ## a) Load the Mara Hyena Project packages from github
+      # hyena data tables from Access backend
       library('hyenadata')
+      
+      # hyena package tools / functions
+      library('hyenatools')
+      
 
 
   ### 1.3 Install and load CRAN packages
