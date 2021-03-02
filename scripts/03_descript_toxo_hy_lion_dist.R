@@ -659,10 +659,10 @@
                  # Note forcing dwplot to graph SD by specificy the upper and
                  # lower bounds instead of automatically calculating actual
                  # 95% CI from SE
-                                           conf.low = c((-91.43 + -22.68), 
-                                                        (-43.50 + -36.42)),
-                                           conf.high = c((-91.43 + 22.68), 
-                                                         (-43.50 + 36.42)))
+                                           conf.low = c((-91.43 + 0), 
+                                                        (-43.50 + 0)),
+                                           conf.high = c((-91.43 + 0), 
+                                                         (-43.50 + 02)))
       
     ## b) Graph results using dotwhisker, broom, dplyr, and ggplot2 packages
       dwplot(cub.lion.dist.mean.sd, 
@@ -672,7 +672,7 @@
              whisker_args = list(size = 1),
              dodge_size = 1) + 
         #coord_flip() + # flip x and y axes
-        xlim (-115,0) +
+        xlim (-100,0) +
         labs(title = 'Comparison of hyena cub approach 
 distance from lions by T. gondii infection status.',
              subtitle = ('')) +
@@ -727,10 +727,10 @@ distance from lions by T. gondii infection status.',
                 # Note forcing dwplot to graph SE by specificy the upper and
                 # lower bounds instead of automatically calculating actual
                 # 95% CI from SE
-                                    conf.low = c((-27.0 + -1.66), 
-                                                (-24.8 + -1.12)),
-                                    conf.high = c((-27.0 + 1.66), 
-                                                 (-24.8 + 1.12)))
+                                    conf.low = c((-27.0 + 0), 
+                                                (-24.8 + 0)),
+                                    conf.high = c((-27.0 + 0), 
+                                                 (-24.8 + 0)))
       
     ## b) Graph results using dotwhisker, broom, dplyr, and ggplot2 packages
       dwplot(sub.adult.lion.dist.ls.means, 
