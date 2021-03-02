@@ -213,7 +213,8 @@
       #+ age.mon.lion # many NA
       + age.cat.dart
       + age.cat.lion
-      #+ hum.dist.lion     # sensitivity
+      #+ hum.dist.lion    # sensitivity
+      #+ hum.pop.den      # sensitivity
       #+ food.present     # sensitivity
       #+ stan.rank.lion   # sensitivity, since only 
                           # female ranks, can't control for sex
