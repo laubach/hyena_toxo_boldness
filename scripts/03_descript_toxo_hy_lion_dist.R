@@ -705,7 +705,7 @@ distance from lions by T. gondii infection status.',
         scale_color_manual(values=c('red3')) + 
         # NOTE: we flipped x and y axes above, so the 'xlab' is actually
         # 'ylab' and vice versa. 
-        xlab(expression(atop(bold('Mean ± SD'), 
+        xlab(expression(atop(bold('Mean'), 
                              paste(italic('Minimum approach distance from lions (m)'))))) +
         #scale_y_discrete(labels = c('Seropostive hyenas')) +
         ylab('')
@@ -773,7 +773,7 @@ distance from lions by T. gondii infection status.',
         scale_color_manual(values=c('goldenrod3')) + 
         # NOTE: we flipped x and y axes above, so the 'xlab' is actually
         # 'ylab' and vice versa. 
-        xlab(expression(atop(bold('Mean ± SE'), 
+        xlab(expression(atop(bold('Marginal Mean'), 
                              paste(italic('Minimum approach distance from lions (m)'))))) +
         #scale_y_discrete(labels = c('Seropostive hyenas')) +
         ylab('')
