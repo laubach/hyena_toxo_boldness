@@ -662,7 +662,8 @@
                                            conf.low = c((-91.43 + 0), 
                                                         (-43.50 + 0)),
                                            conf.high = c((-91.43 + 0), 
-                                                         (-43.50 + 0)))
+                                                        (-43.50 + 0)))
+
       
     ## b) Graph results using dotwhisker, broom, dplyr, and ggplot2 packages
       dwplot(cub.lion.dist.mean.sd, 
