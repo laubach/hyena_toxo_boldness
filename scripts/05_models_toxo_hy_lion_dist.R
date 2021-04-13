@@ -240,5 +240,42 @@
                                         'toxo.status')
     summary(lion.dist.adj.sub.adult.mmean.m)
     
+    
+    
+  ### 4.2 Revision 2, sensitivity analysis classify 'doubtful' as 1 = infected
+    ## a) Create a binary factor for diagnosis as toxo_status
+    lion_hy_dist_toxo_sub_adult <- lion_hy_dist_toxo_sub_adult %>%
+        mutate(toxo.sens = as.factor(ifelse(diagnosis == 'negative', 
+                                              0, 1)))
+    
+    ## d) Sensitivity analysis sub and adult data: 'doubtful' diagnoses = 
+    # 1 (infected) with min. approach dist. from lions 
+    lion.dist.sens.sub.adult <- lmer(sqrt.dist ~ toxo.sens 
+                                    # dist.age.stndrzd  ~ toxo.status +
+                                    + sex  
+                                    #+ age.mon.lion # many NA
+                                    + age.cat.dart
+                                    + age.cat.lion
+                                    #+ hum.dist.lion    # sensitivity
+                                    #+ hum.pop.den      # sensitivity
+                                    #+ food.present     # sensitivity
+                                    #+ stan.rank.lion   # sensitivity, since only 
+                                    # female ranks, can't control for sex
+                                    + (1|hy.id),
+                                    data = lion_hy_dist_toxo_sub_adult)
+    #data = lion_hy_dist_toxo_restrict_sub_adult)    # sensitivity
+    #data = subset(lion_hy_dist_toxo_sub_adult,    
+    #               diagnosis != 'doubtful'))       # sensitivity
 
+      
+    ## e) Parameter estimates
+    summary(lion.dist.sens.sub.adult)  # model parameter estimates
+    confint(lion.dist.sens.sub.adult)  # 95% CIs
+    plot(lion.dist.sens.sub.adult) # view fitted vs residuals
+    vif(lion.dist.sens.sub.adult)
+    
+    # Use emmeans to estimate marginal means
+    lion.dist.sens.sub.adult.mmean.m <- emmeans(lion.dist.sens.sub.adult, 
+                                               'toxo.status')
+    summary(lion.dist.sens.sub.adult.mmean.m)
       
