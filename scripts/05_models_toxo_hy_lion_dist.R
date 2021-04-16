@@ -82,16 +82,6 @@
         library ('car')
         #options(contrasts = c('contr.sum', 'contr.poly'))
      
-           
-  ### 1.4 Get Version and Session Info
-    R.Version()
-    sessionInfo()
-    
-    # Developed in:   
-    # R version 4.0.2 (2020-06-22)
-    # Platform: x86_64-apple-darwin17.0 (64-bit)
-    # Running under: macOS Catalina 10.15.7
-
     
   ### 1.3 Get Version and Session Info
     ## a) R and Package versions

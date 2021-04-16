@@ -214,9 +214,11 @@
              aes(x = age.mon.dart, y = spratio, color = toxo.status)) +
         geom_point(shape = 1) +
         geom_smooth(method = loess, se = F) + # Add smooth curve best fit lines
+        scale_colour_manual(values=c("black", "red"),
+                            breaks = c('0', '1')) +
         geom_hline(aes(yintercept = 0.5), colour = 'red', linetype = 'dashed') +
         theme(text = element_text(size=20))+
-        scale_colour_hue(l = 50) + # Use a slightly darker palette than normal
+        #scale_colour_hue(l = 50) + # Use a slightly darker palette than normal
         labs(title = 'SP ratio by age at diagnosis',
              subtitle = '(Age in months)') +
         theme(plot.title = element_text(hjust = 0.5)) + # center title
