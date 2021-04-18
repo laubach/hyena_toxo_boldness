@@ -6,7 +6,7 @@
 #############                                                      #############
 #############           By: Zach Laubach and Eben Gerring          #############
 #############                 created: 12 July 2018                #############
-#############             last modified: 26 Feb. 2021              #############
+#############             last modified: 18 April 2021             #############
 ################################################################################
 
 ### PURPOSE: Models assessing effect of T. gondii infection status on
@@ -174,28 +174,8 @@
       confint(lion.dist.unadj.sub.adult)  # 95% CIs
       plot(lion.dist.unadj.sub.adult) # view fitted vs residuals
     
-   
     
-    
-    # ## c) Bootstrap parameter estimates   
-    #   # bootstrapping number of resampling simulations
-    #   boot.lion.dist.unadj.sub.adult <- 
-    #     bootMer(x = lion.dist.unadj.sub.adult,
-    #             FUN = fixef, nsim = 1000,
-    #             use.u = F, type = 'parametric')
-    #   
-    #   tidy(boot.lion.dist.unadj.sub.adult) # beta estimates and SE
-    #   
-    #   # use 'boot' package to generate 95% CI  
-    #   bt.ci.lion.dist.unadj.sub.adult <- 
-    #     boot.ci(boot.lion.dist.unadj.sub.adult, 
-    #                                       type = c('perc', 'norm', 'basic'),
-    #                                       index = 2) # CI for 1st betas
-    #   
-    #   print(bt.ci.lion.dist.unadj.sub.adult)
-    
-    
-    ## d) Adjusted model sub and adult data: lifestage
+    ## c) Adjusted model sub and adult data: lifestage
     # min. approach dist. from lions by toxo status
     lion.dist.adj.sub.adult <- lmer(sqrt.dist ~ toxo.status 
       # dist.age.stndrzd  ~ toxo.status +
@@ -219,7 +199,7 @@
     # and age.cat.lion
 
     
-    ## e) Parameter estimates
+    ## d) Parameter estimates
     summary(lion.dist.adj.sub.adult)  # model parameter estimates
     confint(lion.dist.adj.sub.adult)  # 95% CIs
     plot(lion.dist.adj.sub.adult) # view fitted vs residuals

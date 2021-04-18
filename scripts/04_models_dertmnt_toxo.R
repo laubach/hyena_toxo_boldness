@@ -6,7 +6,7 @@
 #############                                                      #############
 #############           By: Zach Laubach and Eben Gerring          #############
 #############                 created: 12 July 2018                #############
-#############              last modified: 11 Feb. 2021             #############
+#############             last modified: 18 April 2021             #############
 ################################################################################
 
 ### PURPOSE: Model the relationship between demographic and ecological and  

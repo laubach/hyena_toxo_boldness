@@ -6,7 +6,7 @@
 #############                                                      #############
 #############          By: Zach Laubach and Eben Gerring           #############
 #############               created: 12 July 2018                  #############
-#############             last modified: 9 Feb. 2021               #############
+#############            last modified: 18 April 2021              #############
 ################################################################################
 
 ### PURPOSE: Load T. gondii diagnosis data, hyena lion interaction data, and
@@ -69,12 +69,20 @@
       # R version 4.0.2 (2020-06-22)
       # Platform: x86_64-apple-darwin17.0 (64-bit)
       # Running under: macOS Catalina 10.15.7
+      
+      # Packages and versions attached in this and subsequent R scripts
+      # Packages used included:
+      # car_3.0-10, aod_1.3.1, effects_4.2-0car, Data_3.0-4, emmeans_1.5.4,     
+      # bbmle_1.0.23.1, lme4_1.1-26, Matrix_1.3-2, broom.mixed_0.2.6, 
+      # broom_0.7.4, dotwhisker_0.5.0, gridExtra_2.3, here_1.0.1, forcats_0.5.1     
+      # stringr_1.4.0, dplyr_1.0.4, purrr_0.3.4, readr_1.4.0, tidyr_1.1.2, 
+      # tibble_3.0.6, ggplot2_3.3.3, tidyverse_1.3.0  
   
     ## b) Note the final version of the hyenadata package
       packageVersion('hyenadata')
     
       # ‘1.2.88’
-
+    
     
  
 ###############################################################################
