@@ -2,5 +2,12 @@
 .Rhistory
 .RData
 .Ruserdata
+<<<<<<< HEAD
 packrat/lib*/
 .Rprofile
+=======
+packrat/
+.Rprofile
+old/
+toxo_samps.xlsx
+>>>>>>> 6ed50b6d477678034ed9e06f21c9ca93ed705806
