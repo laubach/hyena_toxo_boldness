@@ -6,7 +6,7 @@
 #############                                                      #############
 #############           By: Zach Laubach and Eben Gerring          #############
 #############                 created: 12 July 2018                #############
-#############             last modified: 1 March 2021              #############
+#############             last modified: 21 April 2021             #############
 ################################################################################
 
 ### PURPOSE: Models of lion caused hyena mortality by  

@@ -1,2 +1,9 @@
-# hyena_toxo_boldness
-This code is designed to tidy and model the demographic and ecological determinants of Toxoplasma gondii infection and the behavioral and fitness consequences of infection in spotted hyenas from the Mara Hyena project.
+# Toxoplasma gondii infections are associated with boldness towards lions in wild hyena hosts.
+
+This code is designed to tidy and model the demographic and ecological determinants of Toxoplasma gondii infection and the behavioral and fitness consequences of infection in spotted hyenas from the Mara Hyena project. The citation and abstract for the manuscript affiliated with these data and code follows.
+
+Gering, E., Laubach, Z. M., Weber, P., Hussey, G. S., Lehmann, K. D. S., Montgomery, T. M., Turner, J. W., Perng, W., Pioon, M. O., Holekamp, K. E., and Getty, T. (accepted). Toxoplasma gondii infections are associated with boldness towards lions in wild hyena hosts. Nature Communications. DOI: 10.1101/2020.08.26.268805
+
+Correspondence and requests for materials should be addressed to zachary.laubach@colorado.edu
+
+Abstract: Toxoplasma gondii is hypothesized to manipulate the behavior of warm-blooded hosts to promote trophic transmission into the parasite’s definitive feline hosts. A key prediction of this hypothesis is that T. gondii infections of non-feline hosts are associated with costly behavior toward T. gondii’s definitive hosts; however, this effect has not been documented in any of the parasite’s diverse wild hosts during naturally occurring interactions with felines. Here, three decades of field observations reveal that T. gondii-infected hyena cubs approach lions more closely than uninfected peers and have higher rates of lion mortality. We discuss these results in light of 1) the possibility that hyena boldness represents an extended phenotype of the parasite, and 2) alternative scenarios in which T. gondii has not undergone selection to manipulate behavior in host hyenas. Both cases remain plausible and have important ramifications for T. gondii’s impacts on host behavior and fitness in the wild.

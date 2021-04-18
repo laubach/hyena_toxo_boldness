@@ -6,7 +6,7 @@
 #############                                                      #############
 #############           By: Zach Laubach and Eben Gerring          #############
 #############                 created: 12 July 2018                #############
-#############              last modified: 23 Feb. 2021             #############
+#############              last modified: 18 April 2021            #############
 ################################################################################
 
 ### PURPOSE: Univariate and bivariate statistics for models in which 
